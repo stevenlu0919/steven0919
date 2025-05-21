@@ -1,8 +1,8 @@
 ---
 title: 我的分享
-published: 2024-04-01
+published: 2025-05-21
 description: "分享一张照片吧."
-image: ""
+image: "./cover.jpeg"
 tags: [生活]
 category: 分享
 draft: false
