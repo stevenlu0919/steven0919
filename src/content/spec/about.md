@@ -1,7 +1,7 @@
 # 关于
-这是我的github [Steven](https://github.com/stevenlu0919/steven0919).
+我的抖音 [Steven](https://www.douyin.com/user/Steven_7052)
 
 ::github{repo="stevenlu0919/steven0919"}
 
 > ### My friends
-> - [Gunbrad](https://gunbrad.xyz）
+> -[Gunbrad](https://gunbrad.xyz/)
