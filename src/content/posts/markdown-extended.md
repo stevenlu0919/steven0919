@@ -4,13 +4,13 @@ published: 2025-05-21
 updated: 2025-05-21
 description: '个人主页介绍'
 image: ''
-tags: [Demo, Example, Markdown, Fuwari]
+tags: [生活]
 category: 'Examples'
 draft: false 
 ---
 
-## 主页修改测试
+## 哈喽，这是我于2025年5月20日创建的个人博客
 it's 
-
 Steven Lu
 
+后续我会持续更新博客网站的内容，记录自己的成长和学习！
