@@ -1,7 +1,7 @@
 ---
 title: Steven Lu的个人主页
 published: 2025-05-21
-updated: 2025-5-21
+updated: 2025-05-21
 description: '个人主页介绍'
 image: ''
 tags: [Demo, Example, Markdown, Fuwari]
