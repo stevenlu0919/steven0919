@@ -4,4 +4,4 @@
 ::github{repo="stevenlu0919/steven0919"}
 
 > ### My friends
-> - [Gunbrad](https://gungrad.xyz）
+> - [Gunbrad](https://gunbrad.xyz）
