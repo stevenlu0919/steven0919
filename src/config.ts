@@ -66,7 +66,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "WeChat",
-			icon: "fa6-brands:weixn",
+			icon: "fa6-brands:weixin",
 			url: "https://store.steampowered.com",
 		},
 		{
