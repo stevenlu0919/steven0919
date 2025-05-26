@@ -4,17 +4,24 @@ import { profileConfig } from "../../config";
 import { url } from "../../utils/url-utils";
 import ImageWrapper from "../misc/ImageWrapper.astro";
 
+// 不需要导入图片，直接使用public目录下的图片
 const config = profileConfig;
+
+// 添加CSS样式来实现二维码的悬停显示
 ---
+
 <style>
+    /* 悬停显示二维码的样式 */
     .card-base {
-            overflow: visible !imporant;
+        /* 确保不会裁剪溢出内容 */
+        overflow: visible !important;
     }
+    
     /* 微信二维码样式 */
     .wechat-icon {
         position: relative;
     }
-
+    
     /* 微信二维码容器 */
     .wechat-qrcode {
         position: absolute;
@@ -38,7 +45,7 @@ const config = profileConfig;
         height: 100%;
         object-fit: contain;
     }
-
+    
     /* 二维码箭头 */
     .wechat-qrcode::before {
         content: '';
@@ -52,6 +59,7 @@ const config = profileConfig;
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1);
     }
 </style>
+
 <div class="card-base p-3">
     <a aria-label="Go to About Page" href={url('/about/')}
        class="group block relative mx-auto mt-1 lg:mx-0 lg:mt-0 mb-3
@@ -70,17 +78,16 @@ const config = profileConfig;
         <div class="text-center text-neutral-400 mb-2.5 transition">{config.bio}</div>
         <div class="flex gap-2 justify-center mb-1">
             {config.links.length > 1 && config.links.map(item => (
-                 {config.links.length > 1 && config.links.map(item => (
-                    item.name === 'Wechat' ? (
-                        <div id="wechat-icon" class="wechat-icon btn-regular rounded-lg h-10 w-10 flex items-center justify-center">
+                item.name === 'Wechat' ? (
+                    <div id="wechat-icon" class="wechat-icon btn-regular rounded-lg h-10 w-10 flex items-center justify-center">
                         <Icon name={item.icon} class="text-[1.5rem]"></Icon>
                     </div>
                 ) : (
                     <a rel="me" aria-label={item.name} href={item.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
                         <Icon name={item.icon} class="text-[1.5rem]"></Icon>
                     </a>
-            ))
-            )}
+                )
+            ))}
             {config.links.length == 1 && <a rel="me" aria-label={config.links[0].name} href={config.links[0].url} target="_blank"
                                             class="btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95">
                 <Icon name={config.links[0].icon} class="text-[1.5rem]"></Icon>
