@@ -20,9 +20,14 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://fuwari.vercel.app/",
+	site: "https://stevenlu.top/",
 	base: "/",
-	trailingSlash: "always",
+	trailingSlash: "ignore",
+	output: "static",
+	prefetch: {
+		prefetchAll: true,
+		defaultStrategy: 'hover'
+	},
 	integrations: [
 		tailwind({
 			nesting: true,
